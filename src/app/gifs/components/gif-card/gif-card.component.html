@@ -1,0 +1,13 @@
+<div class=" card mb-2 bg-dark text-center">
+  <app-lazy-loading
+  [url]="gifCard.images.downsized_medium.url"
+  [alt]="gifCard.title || 'Not Title'"
+  >
+  </app-lazy-loading>
+  <!-- <img [src]="gifCard.images.downsized_medium.url" alt=""> -->
+    <div class="card-body text-white">
+      <p class="card-text">
+        {{gifCard.title | titlecase}}
+      </p>
+    </div>
+ </div>
